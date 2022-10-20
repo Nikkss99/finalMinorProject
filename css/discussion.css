@@ -1,0 +1,21 @@
+.discussionSection{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.discussionSection textarea{
+    width: 40vw;
+    height: 20vh;
+    resize: none;
+    border-radius: 4%/21%;
+    text-align: center;
+    margin: 4% 0%;
+    border: none;
+    
+}
+.subDisscussion{
+    width: 40vw;
+}

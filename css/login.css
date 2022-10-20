@@ -1,0 +1,106 @@
+@media only screen and (max-width: 1020px){
+    body{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: fit-content;
+        margin: 0%;
+        
+    }
+   body section{
+    
+    min-height: fit-content;
+    overflow-y:visible ;
+    
+   }
+   #login2{
+    min-height: 3rem;
+    margin-bottom: 5%;
+   }
+    .loginImageContainer{
+        margin-top: 3rem;
+        
+        height:50vh;
+        position: static;
+        display: flex;
+        min-height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        min-height: 25rem;
+        
+    }
+    .loginImageContainer img{
+    
+        height: 60%;
+        width: 60%;
+        object-fit: contain;
+        
+    }
+    .fields{
+        margin-bottom: 7%;
+    }
+    .fields input{
+        height: 5rem;
+    }
+    .loginform{
+        width: 100%;
+        height: 50vh;
+        min-height: 10rem;
+        background: transparent;
+        
+        display: flex;
+        position: static;
+        margin-bottom: 5%;
+    }
+    .loginform h1{
+        overflow: visible;
+        position: absolute;
+        top: 0;
+    };
+}
+@media only screen and (min-width: 1020px){
+body{
+    height: 100vh;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.loginform{
+    position:static;
+    display: flex;
+    background-color: transparent;
+    min-width: 50rem;
+    min-height: 40rem;
+    
+}
+.loginform h1{
+    overflow: visible;
+}
+.loginImageContainer{
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+    min-height: 30rem;
+    min-width: 40rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+     background-image: url("../resources/loginPage/Star\ 7.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#Loginpng{
+    position: absolute;
+    /* top: 50; */
+
+}
+.loginImageContainer img{
+    width: 60%;
+    
+}
+}

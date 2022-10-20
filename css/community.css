@@ -1,0 +1,191 @@
+*{
+    font-size: 22px;
+    /* overflow-x: hidden; */
+}
+body{
+    margin: 0%;
+    background-color: #04132f;
+    font-family: 'Inter', sans-serif;
+}
+.Hero nav{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#active{
+    color:#f524d4;
+}
+.navigationElements{
+    /* margin-top: 8%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100vw;
+    margin-right:8%;
+}
+.navigationElements h3{
+    color: #ffff;
+    margin: 0% 4% 0% 7%;
+    font-family: 'Inter', sans-serif;
+}
+.heading{
+    margin: 0% 5%;
+    display: flex;
+    flex-direction: row;
+}
+.heading span h1{
+    font-size: 1.4rem;
+}
+#head1{
+    color:#ffff;
+    font-family: 'Inter', sans-serif;
+
+}
+#head2{
+    background: linear-gradient(to right,#f524d4,#ffff);
+    background-clip : text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Inter', sans-serif;
+    
+}
+.loginButton{
+    margin: 0% 5% ;
+    min-width: 8%;
+    height: 35px;
+    border-radius: 7%/24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background : -webkit-linear-gradient(180deg,#9355b0,#f524d4);
+}
+.baseClass{
+    min-height: 100vh;
+}
+.loginButton h4{
+    font-family: 'Inter', sans-serif;
+    color:white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.HeroSection{
+    display: flex;
+    flex-direction: row;
+}
+#Purple{
+    width: fit-content;
+    background: linear-gradient(to right,#f524d4,#f524d4,#9355b0,#9355b0);
+    background-clip : text;
+    -webkit-text-fill-color: transparent;
+}
+.decor{	
+    text-decoration:none;
+padding: 4px;
+height: 18rem;
+transition: transform .5s ease;}
+.decor:hover{
+    transform: scale(1.2)}
+/* .decor:hover { background:rgb(250, 0, 0);} */
+.decor:hover img{ visibility:hidden;
+} 
+
+.nametitle{
+    font-family: 'Inter', sans-serif;
+    color:white;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    margin: 0 5px;
+    
+}
+.textbrdr{
+    font-size: .5rem;
+    max-width: 400px;
+    border-style:solid;
+    border-color:green;
+    padding: 1em;
+    color: #ffff;
+}
+.textbrdr:hover{background-color: gray;}
+.discussions{
+    display: flex;
+    flex-direction: row;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.artistCardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ArtistCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ArtistDetails{
+    width:50%;
+    padding: 0% 15%;
+    color: white;
+}
+.ArtistImage{
+    width: 50%;
+    overflow: hidden;
+}
+.whiteUnderLine{
+    margin: 5% 0%;
+    width: 80vw;
+    height: 0.1rem;
+    background-color: #9355b0;
+
+}
+.reverseArtistCard{
+
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    
+}
+.reverseArtistCard>.ArtistImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.comHeroSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.comleftHero{
+    padding-right: 20%;
+    width: 22rem;
+}
+.comleftHero h1{
+    font-size: 1.8rem;
+}
+.commurightHero{
+    width: 20%;
+    height: 60%;
+    border-radius: 3%/5%;
+    overflow: hidden;
+    min-width: 30rem;
+    min-height: 20rem;
+}
+.commurightHero video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

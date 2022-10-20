@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sell</title>
+    <link rel="stylesheet" href="textbox.css">
+
+    <style>
+         /*style for div,body */
+        .container{
+            background: #222;
+                color: #fff;
+                background-size: cover;
+        background-position: center;
+        max-width: 450px;
+        height: 100vh;
+        margin: auto;
+        position: relative;
+
+        }
+        h2{
+            color:white;
+        }
+        body{
+            background-color: #04132f;
+           font-family: 'Inter', sans-serif;
+            padding-bottom:100px;
+        }
+        .second{
+            
+         margin-right: 30px;
+         margin-left: 20%;
+        }
+        
+        .space{
+            margin-bottom:30px;
+        }
+        .prevText{  /*this css manupulates space for the image which has to be uploade*/
+            position: absolute;
+            left: 50%;
+            bottom: 30%;
+            transform: translateX(-50%);
+            width: 90%;
+            text-shadow: 2px 2px 20px #000; 
+            }
+
+          .upload-icon{/* css for upload icon*/
+            position: absolute;
+            height: 60px;
+            bottom: 1px;
+            left: 90%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            border-radius: 60px;
+            }
+            .con{
+                width:50%
+            }
+            .gi{/* outer most div for uploaded image 'gi' is the outermost div*/
+                display: flex;
+                flex-direction: row;
+                
+            }
+            .btn{
+                /*css for button*/
+                width:300px;
+                height:100px;
+                border:none;
+                color:white;
+                background-color:rgb(255,0,68);
+                border-radius:4px;
+                box-shadow:inset 0 0 0 0#f9e506;
+                transition:ease-out 0.15s;
+                font-size:2rem;
+                outline:none;
+                letter-spacing: 4px;
+                font-family:'Courier New', Courier, monospace;
+            
+
+            }
+            .btn:hover{
+                box-shadow: inset 300px 000 #f9e506;
+                cursor:pointer;
+                color:#000;
+            }
+    </style>
+</head>
+<body>
+    <section class="Hero">
+        <nav class="navigation_bar">
+            <div class="heading">
+
+                <span ID="head1"><h1>WOJ</h1></span>
+                <span id="head2"><h1>TEK</h1></span>
+            </div>
+            <div class="navigationElements">
+                <a href="../index.html" >HOME</a>
+                <a href="./market.html">MARKET</a>
+                <a href="./sell.html">SELL</a>
+                <a href="./community.html" id="active">COMMUNITY</a>
+                
+                
+            </div>
+            <div class="loginButton">
+                <h4>Log in</h4>
+            </div>
+
+
+        </nav>
+    </section>
+    <!-- div for image which has to be uploaded-->
+    <div class="gi">
+        <div class="con"> 
+        <div class="container" id="imgBox">
+
+            <div id="prevText"></div>
+            
+            
+            <input type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)">
+            <label for="file"><img src="./th-669779798.jpeg" class="upload-icon"></label> <!-- uplload label-->
+        </div>
+        </div>
+      <!-- product detail-->  
+    <div class="second">
+        <div class="space"><h2>Product detail</h2></div>
+        <div class="space"><input type="text" ><span> Product name</span></div>
+        <div class="space"><form>
+            <select name="art">
+                <option value="3D art">3d art</option>
+                <option value="3D art">oil painting</option>
+                <option value="3D art">music</option>
+                <option value="3D art">animated art</option>
+                <option value="3D art">sketch</option>
+
+            </select>
+        </form></div>
+        <div class="space"><input type ="number" ><span>price</span></div>
+        <div class="space"><input type ="text" ><span>product discription</span></div>
+ 
+       <!-- personal detail-->
+        <div class="space1"><h2>Personal detail</h2></div>
+        <div class="space"><input type="text" ><span>name</span></div>
+        <div class="space"><input type ="text" ><span>E-mail</span></div>
+        <div class="space"><input type ="tel" ><span>conatact no</span></div>
+        <div class="space"><input type ="text"><span>adress</span></div>
+        <div class="btn"><button>UPLOAD</button></div>
+
+    </div>
+</div>
+     
+    
+
+    <script>
+        var textBox = document.getElementById("textBox");
+        var imgBox = document.getElementById("imgBox");
+        
+
+        var loadFile = function(event){
+            imgBox.style.backgroundImage = "url(" +URL.createObjectURL(event.target.files[0])+ ")";
+        }
+    </script>
+</body>
+</html>

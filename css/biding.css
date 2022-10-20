@@ -1,0 +1,267 @@
+*{  
+
+    overflow-x: hidden;
+
+}
+:root{
+    --primary:linear-gradient(to right,#f524d4,#ffff);
+    --secondary:-webkit-linear-gradient(180deg,#9355b0,#f524d4);
+
+}
+body{
+    overflow-x: hidden;
+    margin: 0%;
+    background-color: #04132f;
+    font-family: 'Inter', sans-serif;
+}
+.Hero nav{
+    margin-top: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#active{
+    color:#f524d4;
+}
+.navigation_bar{
+    min-height: 10vh;
+    background-color:#04132f;    
+}
+.navigationElements{
+    /* margin-top: 8%; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: stretch;
+    min-width: 35%;
+    margin: 0% 0% 0% 6%;
+    
+}
+.navigationElements A{
+    color: #ffff;   
+    margin: 0% 1.5em;
+    font-size: 1.3em;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+.heading{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+}
+.heading span h1{
+    font-size: 2rem;
+}
+
+#head1{
+    color:#ffff;
+    font-family: 'Inter', sans-serif;
+
+}
+#head2{
+    background: var(--primary);
+    background-clip: content-box;
+    -webkit-background-clip : text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Inter', sans-serif;
+    
+}
+.loginButton{
+    
+    min-width: fit-content;
+    height: 45px;
+    border-radius: 7%/24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background : var(--secondary)
+}
+.loginButton:hover{
+    cursor: pointer;
+}
+.loginButton h4{
+    margin: 0% 40px;
+    font-size:2.2rem;
+}
+#login{
+    margin: 0% 5% ;
+}
+.baseClass{
+    min-height: fit-content;
+}
+.loginButton h4{
+    font-family: 'Inter', sans-serif;
+    color:white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.selected_img{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+    
+}
+.leftimage{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0px 0px 100px;
+}
+.bidbox{
+    width: 40%;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    padding: 45px 0px 0px 200px;
+    
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0px 20px;
+}
+.container .heading1{
+ padding-bottom: 40px;
+ border-width: 300px;
+}
+.container .heading1 h3{
+    color: aliceblue;
+    font-size: 3rem;
+    font-weight: bolder;
+    border-bottom:  3px solid #ffff;
+    padding-bottom: 10px;  
+}
+
+.moreimages{
+    padding-top: 0%;
+}    
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 100px;
+    
+}
+.photo{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.photo img{
+    width: 60%;
+    padding-bottom: 20px;
+    border-radius: 6px;
+}
+
+ 
+  .photo img:hover{
+    transition: ease-in-out 1.3s;
+    transform: scale(1.2);
+  }
+
+.button{
+ display: flex;
+ justify-content: center;
+ 
+ 
+ 
+ } 
+#likebutton{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 50px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(16, 119, 215);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+#addbutton{
+     border: 0;
+    line-height: 2.5;
+    padding: 0 50px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(164, 50, 150);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+
+}
+
+#name{
+    color: floralwhite;
+    padding-top: 5%;
+    font-weight: bolder;
+    font-size: 300%; 
+    margin-bottom: 0%;
+}
+#artist{
+    margin-bottom: 03%;
+    color:#f524d4;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#description{
+    color: floralwhite;
+    padding-top: 5%;
+    font-weight: bolder;
+    font-size: 300%;
+    margin-bottom: 0%;
+}
+
+.bid{
+    font-size: 200%;
+    color: antiquewhite;
+}
+#bidbutton{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(251, 7, 7);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    width: 100%;         
+
+}
+#fname {
+    width: 100%;
+    padding-top: 25px;
+    
+}
+
+.description{
+    color: #f524d4;
+}
+

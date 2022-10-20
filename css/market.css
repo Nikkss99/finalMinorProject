@@ -18,17 +18,23 @@ body{
     font-family: 'Inter', sans-serif;
 }
 .Hero nav{
-    margin-top: 1%;
+    margin-top: 0%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 1px black;
 }
 #active{
     color:#f524d4;
 }
 .navigation_bar{
+    margin-top:0% ;
     min-height: 10vh;
+    position:fixed;
+    width: 100vw;
+    z-index: 7;
+    background-color: #04132f;
 }
 .navigationElements{
     /* margin-top: 8%; */
@@ -70,7 +76,7 @@ body{
     
 }
 .loginButton{
-    
+    margin-right: 0%;
     min-width: fit-content;
     height: 45px;
     border-radius: 7%/24%;
@@ -102,9 +108,11 @@ body{
 
 .MarketHeroSection{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 5%;
+    padding-left: 8%;
     padding-top: 10%;
     width: 100%;
+    margin-top: 5%;
+    
 }
 .Heroimage{
     width: 50%;
@@ -112,24 +120,29 @@ body{
     min-height: 10rem;
     min-width: 10rem;
     padding-left: 40%;
+    margin-top: 0%;
 }
 .Heroimage img{
-    width: 80%;
-    height: 50%;
-    padding-left: 30%;
+    width: 100%;
+    height: 100%;
+    margin-right: 0%;
+    margin-top: 0%;
 }
+
 
 .leftHero h1{
     margin: 0%;
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
+    font-weight: 100;
 }
 
 
 .leftHero h3{
     margin: 0%;
     font-size: 3rem;
-    color: blueviolet;
+    background: linear-gradient(to right,#f524d4,#f524d4,#9355b0,#9355b0);
+    margin-top: 2%;
 
 }
 
@@ -148,7 +161,7 @@ body{
     padding-left: 60px;
     padding-bottom: 1px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 3px 3px 5px #9355B0;
+    
 }
 .Explorebycategories{
     padding-block: 45px;

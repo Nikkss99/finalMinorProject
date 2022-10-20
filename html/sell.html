@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sell</title>
-    <link rel="stylesheet" href="textbox.css">
+    <link rel="stylesheet" href="../css/textbox.css">
+    <link rel="stylesheet" href="../index.css">
 
     
 </head>
@@ -19,18 +20,20 @@
             </div>
             <div class="navigationElements">
                 <a href="../index.html" >HOME</a>
-                <a href="./market.html">MARKET</a>
-                <a href="./sell.html">SELL</a>
-                <a href="./community.html" id="active">COMMUNITY</a>
+                <a href="./market1.html">MARKET</a>
+                <a href="./sell.html" id="active">SELL</a>
+                <a href="./community.html">COMMUNITY</a>
+                <a href="./dashboard.html">DASHBOARD</a>
                 
                 
             </div>
-            <div class="loginButton">
+            <div class="loginButton" id="loginbtn">
                 <h4>Log in</h4>
             </div>
+            <a href="./html/loginpage.html" target="_blank" class="login"></a>
 
 
-        </nav>
+        
     </section>
     <!-- div for image which has to be uploaded-->
     <div class="gi">
@@ -41,7 +44,7 @@
             
             
             <input type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)">
-            <label for="file"><img src="th-669779798.jpeg" class="upload-icon"></label> <!-- uplload label-->
+            <label for="file"><img src="../resources/sellPage/th-669779798.jpeg" class="upload-icon"></label> <!-- uplload label-->
         </div>
         </div>
       <!-- product detail-->  
@@ -73,6 +76,22 @@
         var loadFile = function(event){
             imgBox.style.backgroundImage = "url(" +URL.createObjectURL(event.target.files[0])+ ")";
         }
+        const btn = document.querySelectorAll(".btn")
+        const inputs = document.querySelectorAll(".space input")
+        var showAlert = true;
+        btn[0].addEventListener("click",()=>{
+            inputs.forEach((Element)=>{
+            if(Element.value==="" && showAlert){
+                showAlert=false;
+                alert("please fill all the fields")
+            }
+            else if(showAlert){
+                showAlert=false;
+                alert("Uploaded")
+            }
+        })
+        })
+        
     </script>
 </body>
 </html>

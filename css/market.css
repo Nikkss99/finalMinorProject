@@ -8,6 +8,9 @@
     --secondary:-webkit-linear-gradient(180deg,#9355b0,#f524d4);
 
 }
+.loginButton{
+    margin-right: 4%;
+}
 body{
     overflow-x: hidden;
     margin: 0%;

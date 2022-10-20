@@ -3,6 +3,10 @@ const profile = document.querySelectorAll(".DashboardProfie")
 const uploaded = document.querySelectorAll(".uploaded");
 const bought = document.querySelectorAll(".bought");
 const Discussion = document.querySelectorAll(".Disscusion");
+profile[0].style.display="flex"
+uploaded[0].style.display="none"
+bought[0].style.display="none"
+Discussion[0].style.display="none"
 var activeProfile;
 console.log(options[0].children[1].innerHTML.toString())
 for(var i=0;i<options.length;i++){

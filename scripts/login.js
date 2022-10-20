@@ -36,5 +36,6 @@ button.addEventListener("click",()=>{
     }
     else{
         alert("login Successful")
+        window.close()
     }
 })

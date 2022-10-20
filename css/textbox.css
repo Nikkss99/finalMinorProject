@@ -6,15 +6,15 @@
 .space
 {
     position: relative;
-    width: 250px;
+    width: 400px;
     padding: 14px;
     overflow: visible;
 }
 
 .space input
 {
-    width: 330px;
-    padding: 10px;
+    width: 300px;
+    /* padding: 5px; */
     border: 1px solid rgba(255, 255, 255, 0.255);
     background: #1d2b3a;
     border-radius: 5px;
@@ -65,11 +65,6 @@
     border: 1px solid #00dfc4;
 }
 
-
-
-
-
-
 .container{
         background: #222;
         color: #fff;
@@ -95,11 +90,12 @@ body{
 .second{
     
  margin-right: 30px;
- margin-left: 20%;
+ margin-left: 10%;
 }
 
 .space{
     margin-bottom:30px;
+    overflow: visible;
 }
 .prevText{  /*this css manupulates space for the image which has to be uploade*/
     position: absolute;
@@ -144,7 +140,7 @@ body{
     
 
     }
-    *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;

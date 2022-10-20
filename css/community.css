@@ -74,6 +74,7 @@ body{
     justify-content: center;
     background : var(--secondary)
 }
+
 .loginButton:hover{
     cursor: pointer;
 }
@@ -215,6 +216,14 @@ a{
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+#loginbtn,.navigationElements{
+   
+    margin-right:7%;
+}
+.navigationElements{
+    font-size: 1rem;
+    margin-right: 1rem;
 }
 @media only screen and (max-width:1020px) {
     .discussions{

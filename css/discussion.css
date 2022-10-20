@@ -6,6 +6,9 @@
     align-items: center;
     color: white;
 }
+.discussionSection div{
+    width: 40%;
+}
 .discussionSection textarea{
     width: 40vw;
     height: 20vh;

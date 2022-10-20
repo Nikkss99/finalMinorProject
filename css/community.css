@@ -103,6 +103,7 @@ transition: transform .5s ease;}
     flex-direction: row;
     padding: 5%;
     margin: 0 5px;
+    align-items: flex-end;
     
 }
 .textbrdr{
@@ -117,6 +118,9 @@ transition: transform .5s ease;}
 .discussions{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: top;
 }
 a{
     color: white;
@@ -188,4 +192,9 @@ a{
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+@media only screen and (max-width:1020px) {
+    .discussions{
+        flex-direction: column;
+    }
 }

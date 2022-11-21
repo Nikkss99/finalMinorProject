@@ -134,6 +134,7 @@ transition: transform .5s ease;}
     height: 24rem;
 }
 .textbrdr{
+    justify-content: right;
     font-size: 1.2rem;
     max-width: 400px;
     border-style:solid;
